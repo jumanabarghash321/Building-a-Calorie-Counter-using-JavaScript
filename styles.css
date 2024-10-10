@@ -1,0 +1,113 @@
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+}
+
+body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    /* Smooth and clean font */
+    font-size: 18px;
+    /* Base font size */
+    background-color: var(--fcc-blue);
+    /* Background color */
+    color: var(--light-grey);
+    /* Text color */
+}
+
+h1 {
+    text-align: center;
+    /* Center the heading */
+}
+
+.container {
+    width: 90%;
+    /* Container takes 90% of the width */
+    max-width: 680px;
+    /* Maximum width for the container */
+}
+
+h1,
+.container,
+.output {
+    margin: 20px auto;
+    /* Centered margins for these elements */
+}
+
+label,
+legend {
+    font-weight: bold;
+    /* Bold text for labels and legends */
+}
+
+.input-container {
+    display: flex;
+    /* Use flexbox for input layout */
+    flex-direction: column;
+    /* Stack inputs vertically */
+}
+
+button {
+    cursor: pointer;
+    /* Change cursor on hover */
+    text-decoration: none;
+    /* Remove underline from button text */
+    background-color: var(--light-yellow);
+    /* Button background */
+    border: 2px solid var(--dark-yellow);
+    /* Button border */
+}
+
+button,
+input,
+select {
+    min-height: 24px;
+    /* Minimum height for input fields */
+    color: var(--dark-blue);
+    /* Text color for buttons and inputs */
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+    margin-bottom: 10px;
+    /* Spacing between fields */
+}
+
+.output {
+    border: 2px solid var(--light-grey);
+    /* Output area border */
+    padding: 10px;
+    /* Padding inside the output */
+    text-align: center;
+    /* Center text in output area */
+}
+
+.hide {
+    display: none;
+    /* Class to hide elements */
+}
+
+.output span {
+    font-weight: bold;
+    /* Bold text for output spans */
+    font-size: 1.2em;
+    /* Larger font size for emphasis */
+}
+
+.surplus {
+    color: var(--light-pink);
+    /* Color for surplus calorie text */
+}
+
+.deficit {
+    color: var(--light-green);
+    /* Color for deficit calorie text */
+}
